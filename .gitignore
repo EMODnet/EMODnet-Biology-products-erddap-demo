@@ -2,3 +2,5 @@
 .Rhistory
 .RData
 .Ruserdata
+/data/derived/*.nc
+/data/derived/*.csv
