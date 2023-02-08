@@ -234,7 +234,6 @@ var.def.nc(nc, varname = "time", vartype = "NC_DOUBLE", dimensions = "time")
 att.put.nc(nc, variable = "time", name = "standard_name", type = "NC_CHAR", value = "time")
 att.put.nc(nc, variable = "time", name = "long_name", type = "NC_CHAR", value = "Time")
 att.put.nc(nc, variable = "time", name = "units", type = "NC_CHAR", value = "days since 1970-01-01 00:00:00")
-att.put.nc(nc, variable = "time", name = "_FillValue", type = "NC_DOUBLE", value = -9999.9)
 
 # Put data
 var.put.nc(nc, variable = "time", data = time)
@@ -267,7 +266,6 @@ dim.def.nc(nc, dimname = "string80", dimlength = 80)
 
 # Add aphiaid variable and attributes 
 var.def.nc(nc, varname = "aphiaid", vartype = "NC_INT", dimensions = "aphiaid")
-att.put.nc(nc, variable = "aphiaid", name = "units", type = "NC_CHAR", value = "level")
 att.put.nc(nc, variable = "aphiaid", name = "long_name", type = "NC_CHAR", value = "Life Science Identifier - World Register of Marine Species")
 
 # Put aphiaid data
