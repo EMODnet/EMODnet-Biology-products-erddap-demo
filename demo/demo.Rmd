@@ -234,6 +234,7 @@ var.def.nc(nc, varname = "time", vartype = "NC_DOUBLE", dimensions = "time")
 att.put.nc(nc, variable = "time", name = "standard_name", type = "NC_CHAR", value = "time")
 att.put.nc(nc, variable = "time", name = "long_name", type = "NC_CHAR", value = "Time")
 att.put.nc(nc, variable = "time", name = "units", type = "NC_CHAR", value = "days since 1970-01-01 00:00:00")
+att.put.nc(nc, variable = "time", name = "calendar", type = "NC_CHAR", value = "gregorian")
 
 # Put data
 var.put.nc(nc, variable = "time", data = time)
@@ -321,6 +322,7 @@ att.put.nc(nc, variable = "crs", name = "long_name", type = "NC_CHAR", value = "
 att.put.nc(nc, variable = "crs", name = "geographic_crs_name", type = "NC_CHAR", value = "WGS 84")
 att.put.nc(nc, variable = "crs", name = "grid_mapping_name", type = "NC_CHAR", value = "latitude_longitude")
 att.put.nc(nc, variable = "crs", name = "reference_ellipsoid_name", type = "NC_CHAR", value = "WGS 84")
+att.put.nc(nc, variable = "crs", name = "horizontal_datum_name", type = "NC_CHAR", value = "WGS 84")
 att.put.nc(nc, variable = "crs", name = "prime_meridian_name", type = "NC_CHAR", value = "Greenwich")
 att.put.nc(nc, variable = "crs", name = "longitude_of_prime_meridian", type = "NC_DOUBLE", value = 0.)
 att.put.nc(nc, variable = "crs", name = "semi_major_axis", type = "NC_DOUBLE", value = 6378137.)
