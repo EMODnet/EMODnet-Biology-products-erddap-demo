@@ -19,6 +19,14 @@ If you clone this repository, you can read the demo from: `./demo/demo.Rmd`
 If you don't want to download the repository, you can run the demo in a RStudio session that will open in your browser using binder in this link: 
 https://mybinder.org/v2/gh/EMODnet/EMODnet-Biology-products-erddap-demo/HEAD?urlpath=rstudio
 
+## Render
+
+To render the html document do:
+
+```r
+rmarkdown::render(input = "./demo/demo.Rmd", knit_root_dir = getwd(), output_file = "index.html", output_dir = "./docs/")
+```
+
 ## Citation
 
 > Fernández-Bejarano, Salvador (2022). Create a EMODnet-Biology data product as NetCDF. Consulted online at https://github.com/EMODnet/EMODnet-Biology-products-erddap-demo on YYYY-MM-DD.
