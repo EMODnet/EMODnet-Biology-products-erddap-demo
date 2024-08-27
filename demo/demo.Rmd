@@ -268,6 +268,7 @@ dim.def.nc(nc, dimname = "string80", dimlength = 80)
 # Add aphiaid variable and attributes 
 var.def.nc(nc, varname = "aphiaid", vartype = "NC_INT", dimensions = "aphiaid")
 att.put.nc(nc, variable = "aphiaid", name = "long_name", type = "NC_CHAR", value = "Life Science Identifier - World Register of Marine Species")
+att.put.nc(nc, variable = "aphiaid", name = "units", type = "NC_CHAR", value = "level")
 
 # Put aphiaid data
 var.put.nc(nc, variable = "aphiaid", data = taxon$aphiaid)
