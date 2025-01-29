@@ -493,16 +493,16 @@ See below an example of how defining a number of global attributes and adding th
 attributes <- list(
   title = "Example title",
   summary = "This is the result of a demo to show how to turn a variable defined by four dimensions into a netcdf array.",                       
-  Conventions = "CF-1.8",
+  Conventions = "CF-1.12",
   # id = "",
-  naming_authority = "emodnet-biology.eu",
+  naming_authority = "https://emodnet.ec.europa.eu/en/biology",
   history = "https://github.com/EMODnet/EMODnet-Biology-products-erddap-demo",
   source = "https://github.com/EMODnet/EMODnet-Biology-products-erddap-demo",
   # processing_level = "",
   # comment = "", 
   # acknowledgment = "",
   license = "CC-BY",
-  standard_name_vocabulary = "CF Standard Name Table v1.8",
+  standard_name_vocabulary = "CF Standard Name Table v1.12",
   date_created = as.character(Sys.Date()),
   creator_name = "Salvador Fernandez",
   creator_email = "salvador.fernandez@vliz.be",
@@ -511,7 +511,7 @@ attributes <- list(
   project = "EMODnet-Biology",
   publisher_name = "EMODnet-Biology",                 
   publisher_email = "bio@emodnet.eu",                
-  publisher_url = "www.emodnet-biology.eu",                  
+  publisher_url = "https://emodnet.ec.europa.eu/en/biology",                  
   # geospatial_bounds = "",              
   # geospatial_bounds_crs = "",          
   # geospatial_bounds_vertical_crs = "", 
@@ -553,8 +553,8 @@ attributes <- list(
   comment = "Uses attributes recommended by http://cfconventions.org",
   license = "CC-BY", 
   publisher_name = "EMODnet Biology Data Management Team",
-  citation = "Fernández-Bejarano, Salvador. 2022. Create a EMODnet-Biology data product as NetCDF.",
-  acknowledgement = "European Marine Observation Data Network (EMODnet) Biology project (EMFF/2019/1.3.1.9/Lot 6/SI2.837974), funded by the European Union under Regulation (EU) No 508/2014 of the European Parliament and of the Council of 15 May 2014 on the European Maritime and Fisheries Fund"
+  citation = "Fernández-Bejarano, Salvador. 2022. Create a EMODnet-Biology data product as NetCDF. Integrated data products created under the European Marine Observation Data Network (EMODnet) Biology project CINEA/EMFAF/2022/3.5.2/SI2.895681, funded by the by the European Union under Regulation (EU) No 508/2014 of the European Parliament and of the Council of 15 May 2014 on the European Maritime and Fisheries Fund",
+  acknowledgement = "uropean Marine Observation Data Network (EMODnet) Biology project CINEA/EMFAF/2022/3.5.2/SI2.895681, funded by the European Union under Regulation (EU) No 508/2014 of the European Parliament and of the Council of 15 May 2014 on the European Maritime and Fisheries Fund"
 )
 
 # Define function that detects if the data type should be character of 
